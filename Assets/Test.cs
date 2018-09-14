@@ -8,18 +8,20 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        int money = 600;
 
-        if(money <= 50)
+        int[] points = { 30, 20, 50, 10, 80, 15, 60, 100 , 1000,
+                        400};
+
+        for(int i = 0; i < points.Length; i ++)
         {
-            Debug.Log("武器を売る");
-        } else if(money >= 200)
-        {
-            Debug.Log("武器を買う");
-        } else
-        {
-            Debug.Log("ポーションを買う");
+            if(points[i] >= 50)
+            {
+                Debug.Log(points[i]);
+            }
+            
         }
+
+        
     }
 	
 	// Update is called once per frame
