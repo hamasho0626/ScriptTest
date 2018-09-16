@@ -3,6 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+public class Boss
+{
+    int mp = 53;
+
+    public void Magic ()
+    {
+        if(this.mp != 0)
+        {
+            this.mp -= 5;
+            Debug.Log("魔法攻撃をした。残りMPは" + this.mp);
+        } else
+        {
+            Debug.Log("MPが足りないため魔法が使えない");
+        }
+        
+    }
+}
 
 public class Test : MonoBehaviour {
 
@@ -11,13 +28,10 @@ public class Test : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        Boss Magician = new Boss();
 
-        int[] points = { 20, 30, 40, 50, 60 };
-
-        for (int i = 0; i < points.Length; i++)
-        {
-            Debug.Log(points[i]);
-        }
+        Magician.Magic();
+        
 
     }
 	
