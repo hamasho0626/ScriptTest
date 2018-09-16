@@ -9,7 +9,7 @@ public class Boss
 
     public void Magic ()
     {
-        if(this.mp != 0)
+        if(this.mp >= 5)
         {
             this.mp -= 5;
             Debug.Log("魔法攻撃をした。残りMPは" + this.mp);
@@ -30,7 +30,11 @@ public class Test : MonoBehaviour {
 
         Boss Magician = new Boss();
 
-        Magician.Magic();
+        for (int i = 0; i <= 10; i++)
+        {
+            Magician.Magic();
+        }
+        
         
 
     }
