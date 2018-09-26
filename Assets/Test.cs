@@ -20,7 +20,7 @@ public class Test : MonoBehaviour {
             Debug.Log(points[i]);
         }
 
-        for(int i = points.Length - 1; i >= 0 ; i--)
+        for(int i = points.Length -1 ; i >= 0 ; i--)
         {
             Debug.Log(points[i]);
         }
