@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,8 +20,7 @@ public class Test : MonoBehaviour {
             Debug.Log(points[i]);
         }
 
-        Array.Reverse(points);
-        for(int i =0; i < points.Length; i++)
+        for(int i = points.Length - 1; i >= 0 ; i--)
         {
             Debug.Log(points[i]);
         }
