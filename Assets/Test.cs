@@ -14,7 +14,7 @@ public class Test : MonoBehaviour {
 
         int[] points = { 70, 30, 40, 50, 60 };
 
-        Array.Sort(points);
+        
 
         for (int i = 0; i < points.Length; i++)
         {
